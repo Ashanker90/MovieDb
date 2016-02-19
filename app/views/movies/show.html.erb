@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @movie.name %>
+</p>
+
+<p>
+  <strong>Mpaa rating:</strong>
+  <%= @movie.mpaa_rating %>
+</p>
+
+<p>Thank You for adding the Movie!</p>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'See all movies', movies_path %> |
+<%= link_to 'Add another!', new_movie_path %>
